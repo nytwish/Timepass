@@ -1,0 +1,8 @@
+Listening to Lush by zara
+It was a crush
+
+
+As a rule of thumb, Git generally allows 1GB per repo and 100MB per file to be the 
+optimum limit(and to avoid binary files). I believe this could be the reason the tar file is acting the w
+ay it is. My suggestion would be to remove the raspbian.tar.gz file from the repo(like Andr
+ey did a few months back) and place it on a server. Also to modify the QNC job(build.sh script) to pull the file before starting to build the image. Modifications can be done to the file on the server until its fixed and we can figure out how to version control on it.
